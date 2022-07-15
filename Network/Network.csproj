@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">  
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup>
      <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -32,6 +33,10 @@ Fork me: https://github.com/Toemsel/Network</Description>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <DocumentationFile>C:\Entwicklung\Network\Network\Network.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|x64'">
     <DocumentationFile>C:\Entwicklung\Network\Network\Network.xml</DocumentationFile>
   </PropertyGroup>
     
